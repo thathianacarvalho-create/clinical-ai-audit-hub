@@ -47,4 +47,5 @@ Este repositório serve como um framework técnico para a implementação segura
 
 **Tatiana Santos**  
 *Medical Student & Clinical AI Auditor*  
-[Connect with me on LinkedIn] | [Professional Portfolio]
+[Connect with me on LinkedIn] | [Professional Portfolio] ( https://early-clave-043.notion.site/Clinical-AI-Auditor-Portfolio-Tatiana-Santos-3c0dd2317b468043b95bf2ebf3422e7b?source=copy_link)
+]
