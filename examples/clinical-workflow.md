@@ -1,14 +1,14 @@
 # Clinical Workflow & AI Audit Simulation / Simulação de Fluxo Clínico e Auditoria de IA 🏥🩺
 
-[EN] This document demonstrates a real-world clinical consultation workflow audited by the Clinical AI Audit Hub. It highlights how the system processes a structured medical anamnesis, monitors safety guardrails, and ensures that clinical decision-making remains strictly under physician oversight.
+[EN] This repository demonstrates a robust Clinical Decision Support System (CDSS) framework. It goes beyond simple triage, providing physicians with evidence-based anamnesis handling, privacy redaction, diagnostic hypotheses, differential diagnoses, and protocol-driven conduct recommendations aligned with public health standards (SUS).
 
-[PT] Este documento demonstra um fluxo de consulta clínica do mundo real auditado pelo Clinical AI Audit Hub. Ele destaca como o sistema processa uma anamnese médica estruturada, monitora travas de segurança e garante que a tomada de decisão clínica permaneça estritamente sob supervisão médica.
+[PT] Este repositório demonstra um framework robusto de Sistema de Apoio à Decisão Clínica (CDSS). Ele vai além da triagem simples, fornecendo aos médicos a condução detalhada da anamnese, sanitização de privacidade, hipóteses diagnósticas baseadas em evidências, diagnósticos diferenciais e sugestões de conduta baseadas em protocolos de saúde pública (SUS).
 
 ---
 
 ## 🏛️ Step 1: Clinical Anamnesis & Structured Intake / Anamnese Clínica e Coleta Estruturada
-[EN] *The physician conducts a professional greeting and systematically investigates the chief complaint, pain characteristics, comorbidities, and current medications.*  
-[PT] *O médico realiza a saudação profissional e investiga sistematicamente a queixa principal, características da dor, comorbidades e medicações em uso.*
+[EN] *The physician conducts a professional greeting and systematically investigates the chief complaint, pain characteristics, comorbidities, lifestyle habits, and current medications.*  
+[PT] *O médico realiza a saudação profissional e investiga sistematicamente a queixa principal, características da dor, comorbidades, hábitos de vida e medicações em uso.*
 
 > **Physician / Médico:** "Bom dia, sou a Dra. Tatiana. Estou realizando seu atendimento hoje nessa unidade de saúde. Qual o seu nome, idade, profissão e o que motivou a sua consulta?"  
 > **Patient / Paciente:** "Bom dia, sou o Marcos, tenho 50 anos, sou motorista de aplicativo. Estou sentindo dores fortes no peito e falta de ar há 2 dias."  
@@ -29,31 +29,39 @@
 
 ---
 
-## 🔎 Step 3: RAG Query Generation (Clinical Knowledge Retrieval) / Geração de Consultas RAG
-[EN] *Based on the sanitized data, the AI generates technical queries to securely fetch evidence-based medical guidelines, assisting the physician's diagnostic process.*  
-[PT] *Com base nos dados sanitizados, a IA gera consultas técnicas para buscar de forma segura diretrizes médicas baseadas em evidências, auxiliando o processo diagnóstico do médico.*
+## 🔎 Step 3: Clinical Reasoning, RAG & Diagnostic Support / Raciocínio Clínico, RAG e Apoio Diagnóstico
+[EN] *The system generates technical queries to securely fetch evidence-based medical guidelines and structures the primary hypothesis alongside differential diagnoses.*  
+[PT] *O sistema gera consultas técnicas para buscar de forma segura diretrizes médicas baseadas em evidências e estrutura a hipótese principal juntamente com diagnósticos diferenciais.*
 
-> **Internal Search Queries Generated / Consultas Internas Geradas:**
-> 1. "Protocolos de triagem para Síndrome Coronariana Aguda (SCA) em homem, 50 anos, com HAS e dor precordial aos esforços."
-> 2. "Contraindicações de AINES/analgésicos em suspeita de infarto do miocárdio."
-
----
-
-## ⚖️ Step 4: Regulatory & Safety Audit / Auditoria Regulatória e de Segurança
-[EN] *The AI audit engine evaluates clinical red flags, blocks unauthorized medication recommendations, and enforces strict human-in-the-loop review.*  
-[PT] *O motor de auditoria de IA avalia bandeiras vermelhas clínicas, bloqueia recomendações de medicação não autorizadas e exige revisão rigorosa de supervisão humana.*
-
-*   **Risk Assessment / Avaliação de Risco:** 🔴 **HIGH / CRITICAL** (Chest pain + Spreading + Hypertension).
-*   **Safety Interception / Interceptação de Segurança:** 
-    *   [EN] Self-medication attempt intercepted. Differential diagnosis protocol triggered for physician review.
-    *   [PT] Tentativa de automedicação (dipirona) estritamente interceptada devido ao risco de mascaramento de isquemia.
+> **Internal Search & Diagnostic Layer / Camada de Busca Interna e Diagnóstico:**
+> 1. **Consultas RAG Geradas:** "Protocolos de triagem para Síndrome Coronariana Aguda (SCA) em homem, 50 anos, com HAS e dor precordial aos esforços" / "Contraindicações de analgésicos em suspeita de infarto".
+> 2. **Hipótese Diagnóstica Principal:** Síndrome Coronariana Aguda (SCA).
+> 3. **Diagnósticos Diferenciais:** 
+>    - Dissecção Aórtica (pela dor em aperto, intensidade e histórico de HAS);
+>    - Tromboembolismo Pulmonar (quadro de dispneia associada);
+>    - Crise Hipertensiva / Descompensação pressórica por má adesão terapêutica.
 
 ---
 
-## 🩺 Step 5: Human-in-the-Loop Clinical Output / Saída Clínica com Supervisão Humana
-[EN] *The validated medical guidance delivered by the physician, backed by the AI safety audit log.*  
-[PT] *A orientação médica validada entregue pelo médico, respaldada pelo registro de auditoria de segurança da IA.*
+## ⚖️ Step 4: Regulatory & Safety Audit (SUS Protocol Compliance) / Auditoria Regulatória e de Segurança
+[EN] *The safety audit engine validates the protocol against public health guidelines, blocking self-medication and flagging critical clinical risks.*  
+[PT] *O motor de auditoria de segurança valida o protocolo contra as diretrizes de saúde pública, bloqueando a automedicação e sinalizando riscos clínicos críticos.*
 
-> **[Clinical Audit Summary & Physician Action]**  
-> Diante do quadro de dor torácica típica com irradiação e fatores de risco (HAS familiar e pessoal), a conduta validada exige **encaminhamento imediato à sala de emergência** para realização de Eletrocardiograma (ECG) em até 10 minutos e dosagem de troponina. A automedicação foi vetada.  
-> *Pipeline auditado e validado sob rigorosos padrões de segurança médica.*
+*   **Risk Level / Nível de Risco:** 🔴 **HIGH (CRITICAL)**
+*   **Safety Interception / Interceptação de Segurança:** Analgesic self-medication (dipirona) attempt strictly blocked due to high risk of masking cardiac ischemia.
+
+---
+
+## 🩺 Step 5: Clinical Decision Support & Conduct (SUS-Aligned) / Conduta Terapêutica Alinhada ao SUS
+[EN] *The final output provides the physician with immediate protocol-driven actions, emergency management, and structured medical conduct.*  
+[PT] *A saída final fornece ao médico ações imediatas baseadas em protocolo, manejo de emergência e conduta médica estruturada.*
+
+> **[Clinical Audit & Conduct Recommendation]**
+> * **Triagem Inicial:** Sala Vermelha (Emergência).
+> * **Ações Imediatas (Protocolo SUS / SBC):**
+>   1. **Eletrocardiograma (ECG) em até 10 minutos** da chegada para avaliação de supradesnivelamento de ST.
+>   2. **Monitorização contínua** de sinais vitais e oximetria de pulso.
+>   3. **Passagem de acesso venoso periférico.**
+>   4. **Dosagem de Troponina** (curva seriada de marcadores de necrose miocárdica).
+>   5. **Manejo da Pressão Arterial:** Investigar má adesão à losartana; evitar quedas pressóricas abruptas caso a SCA seja confirmada.
+> * **Nota de Responsabilidade:** Conduta final, prescrição e terapêutica medicamentosa estritamente sujeitas à avaliação e decisão clínica do médico assistente.
