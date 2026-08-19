@@ -1,32 +1,39 @@
 # Clinical AI Audit Hub 🏥🤖
 
-[EN] An enterprise-grade governance and safety architecture framework designed for clinical AI applications. This repository demonstrates technical safeguards, multi-layered human-in-the-loop validation, and adversarial stress-testing (Red Teaming) to ensure patient safety and regulatory compliance (LGPD/HIPAA).
+[EN] **Enterprise-Grade Clinical AI Governance & Safety Architecture.** 
+This repository serves as a technical framework for the safe deployment of AI in healthtech environments. It focuses on PII/PHI redaction, regulatory compliance (LGPD/HIPAA/Anvisa), and human-in-the-loop audit pipelines.
 
-[PT] Um framework de arquitetura de governança e segurança de nível corporativo projetado para aplicações de IA clínica. Este repositório demonstra salvaguardas técnicas, validação humana em várias camadas (Human-in-the-Loop) e testes de estresse adversariais (Red Teaming) para garantir a segurança do paciente e a conformidade regulatória (LGPD/HIPAA).
+[PT] **Arquitetura de Governança e Segurança de IA Clínica de Nível Empresarial.**
+Este repositório serve como um framework técnico para a implementação segura de IA em ambientes de healthtech. O foco é a anonimização de dados (PII/PHI), conformidade regulatória (LGPD/HIPAA/Anvisa) e pipelines de auditoria com supervisão humana (human-in-the-loop).
 
 ---
 
-## 🛡️ Core Architecture & Safety Principles / Princípios Centrais de Arquitetura e Segurança
+## 🏗️ Core Pillars / Pilares Principais
 
-*   **[EN] Audit-Only Constraint:** The AI acts strictly as an analytical co-pilot; it never generates autonomous diagnoses or final medical prescriptions.
-*   **[PT] Restrição Apenas de Auditoria:** A IA atua estritamente como um copiloto analítico; ela nunca gera diagnósticos autônomos ou prescrições médicas finais.
-
-*   **[EN] Hierarchy-Independent Guardrails:** Safety protocols cannot be overridden by clinical hierarchy or user coercion, serving as a primary defense against confirmation bias.
-*   **[PT] Travas de Segurança Independentes de Hierarquia:** Os protocolos de segurança não podem ser sobrepostos por hierarquia clínica ou coerção do usuário, servindo como defesa primária contra o viés de confirmação.
-
-*   **[EN] Voice-Input Safety:** Enforces mandatory visual verification steps for Speech-to-Text (STT) inputs to mitigate phonetic misinterpretations and acoustic hallucinations.
-*   **[PT] Segurança de Entrada por Voz:** Impõe etapas obrigatórias de verificação visual para entradas de fala para texto (STT) para mitigar más interpretações fonéticas e alucinações acústicas.
+*   **🔒 Privacy-First:** Data redaction pipelines designed to meet global data privacy standards.
+*   **⚖️ Regulatory Compliance:** Built-in guardrails adhering to Anvisa guidelines and medical safety protocols.
+*   **🩺 Human-in-the-Loop:** Strict "Audit-Only" constraints ensuring clinical decisions remain in the hands of healthcare professionals.
+*   **🧪 Adversarial Resilience:** Rigorous red-teaming strategy to identify and neutralize high-risk edge cases.
 
 ---
 
 ## 📂 Repository Structure / Estrutura do Repositório
 
-*   **`/prompts`:** 
-    *   *[EN]* Contains system prompts engineered with mandatory Chain-of-Thought reasoning, red-flag identification, and strict audit-only boundaries.
-    *   *[PT]* Contém system prompts projetados com raciocínio Chain-of-Thought obrigatório, identificação de bandeiras vermelhas (red flags) e limites estritos de apenas auditoria.
+*   `/prompts`: Core system instructions and Chain-of-Thought (CoT) frameworks.
+*   `/red-teaming`: Adversarial test vectors and safety validation protocols.
+*   `/privacy-lgpd`: Documentation on data sanitization and regulatory compliance.
 
-*   **`/red-teaming`:** 
-    *   *[EN]* Adversarial test matrices and evaluation vectors covering Hierarchical Jailbreaking, Missing Critical Data, and Severe Drug Interactions.
+---
+
+## 🚀 Vision / Visão
+[EN] Bridging the gap between cutting-edge AI capabilities and patient safety in complex clinical environments.
+[PT] Preenchendo a lacuna entre as capacidades de IA de ponta e a segurança do paciente em ambientes clínicos complexos.
+
+---
+
+**Tatiana Santos**  
+*Medical Student & Clinical AI Auditor*  
+[Connect with me on LinkedIn] | [Professional Portfolio] vectors covering Hierarchical Jailbreaking, Missing Critical Data, and Severe Drug Interactions.
     *   *[PT]* Matrizes de testes adversariais e vetores de avaliação cobrindo Jailbreak Hierárquico, Omissão de Dados Críticos e Interações Medicamentosas Severas.
 
 *   **`/privacy-lgpd`:** 
