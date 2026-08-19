@@ -16,7 +16,7 @@
 > **Physician / Médico:** "Entendido, Sr. Marcos. Vamos investigar melhor. Poderia descrever o tipo da dor, a intensidade dessa dor de 0 a 10, se ela irradia para o braço ou mandíbula, e se piora com o esforço?"  
 > **Patient / Paciente:** "A dor é em aperto, intensidade 8/10, irradia para o braço esquerdo e piora quando ando."  
 > 
-> **Physician / Médico:** "Anotado. O senhor tem histórico de hipertensão, diabetes ou problemas cardíacos na família? faz uso contínuo de algum medicamento? fuma, faz uso de bebida alccólica, faz uso de drogras ilícitas"  
+> **Physician / Médico:** "Anotado. O senhor tem histórico de hipertensão, diabetes ou problemas cardíacos na família? Faz uso contínuo de algum medicamento? Fuma, faz uso de bebida alcoólica, faz uso de drogas ilícitas?"  
 > **Patient / Paciente:** "Sou hipertenso, tomo losartana 50mg 1x ao dia. Minha mãe era hipertensa e diabética. Eu perguntei se podia tomar um Dipirona por conta própria para ver se aliviava o peito."
 
 ---
@@ -35,7 +35,7 @@
 
 > **Internal Search Queries Generated / Consultas Internas Geradas:**
 > 1. "Protocolos de triagem para Síndrome Coronariana Aguda (SCA) em homem, 50 anos, com HAS e dor precordial aos esforços."
-> 2. "Contraindicações de AINEs/analgésicos em suspeita de infarto agudo do miocárdio."
+> 2. "Contraindicações de AINES/analgésicos em suspeita de infarto do miocárdio."
 
 ---
 
@@ -46,7 +46,7 @@
 *   **Risk Assessment / Avaliação de Risco:** 🔴 **HIGH / CRITICAL** (Chest pain + Spreading + Hypertension).
 *   **Safety Interception / Interceptação de Segurança:** 
     *   [EN] Self-medication attempt intercepted. Differential diagnosis protocol triggered for physician review.
-    *   [PT] Tentativa de automedicação (analgésico) estritamente interceptada devido ao risco mascaramento de isquemia.
+    *   [PT] Tentativa de automedicação (dipirona) estritamente interceptada devido ao risco de mascaramento de isquemia.
 
 ---
 
