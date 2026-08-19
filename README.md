@@ -10,40 +10,41 @@ Este repositório serve como um framework técnico para a implementação segura
 
 ## 🏗️ Core Pillars / Pilares Principais
 
-*   **🔒 Privacy-First:** Data redaction pipelines designed to meet global data privacy standards.
-*   **⚖️ Regulatory Compliance:** Built-in guardrails adhering to Anvisa guidelines and medical safety protocols.
-*   **🩺 Human-in-the-Loop:** Strict "Audit-Only" constraints ensuring clinical decisions remain in the hands of healthcare professionals.
-*   **🧪 Adversarial Resilience:** Rigorous red-teaming strategy to identify and neutralize high-risk edge cases.
+*   **🔒 Privacy-First:** 
+    *   [EN] Data redaction pipelines designed to meet global data privacy standards.
+    *   [PT] Pipelines de sanitização de dados projetados para atender aos padrões globais de privacidade.
+*   **⚖️ Regulatory Compliance:** 
+    *   [EN] Built-in guardrails adhering to Anvisa guidelines and medical safety protocols.
+    *   [PT] Travas de segurança integradas aderentes às diretrizes da Anvisa e protocolos médicos.
+*   **🩺 Human-in-the-Loop:** 
+    *   [EN] Strict "Audit-Only" constraints ensuring clinical decisions remain in the hands of healthcare professionals.
+    *   [PT] Restrição estrita de "Apenas Auditoria" garantindo que as decisões clínicas fiquem nas mãos dos profissionais de saúde.
+*   **🧪 Adversarial Resilience:** 
+    *   [EN] Rigorous red-teaming strategy to identify and neutralize high-risk edge cases.
+    *   [PT] Rigorosa estratégia de red-teaming para identificar e neutralizar casos extremos de alto risco.
 
 ---
 
 ## 📂 Repository Structure / Estrutura do Repositório
 
-*   `/prompts`: Core system instructions and Chain-of-Thought (CoT) frameworks.
-*   `/red-teaming`: Adversarial test vectors and safety validation protocols.
-*   `/privacy-lgpd`: Documentation on data sanitization and regulatory compliance.
+*   `/prompts`: 
+    *   [EN] Core system instructions and Chain-of-Thought (CoT) frameworks.
+    *   [PT] Instruções principais do sistema e frameworks de raciocínio (Chain-of-Thought).
+*   `/red-teaming`: 
+    *   [EN] Adversarial test vectors and safety validation protocols.
+    *   [PT] Vetores de testes adversariais e protocolos de validação de segurança.
+*   `/privacy-lgpd`: 
+    *   [EN] Documentation on data sanitization and regulatory compliance.
+    *   [PT] Documentação sobre sanitização de dados e conformidade regulatória.
 
 ---
 
 ## 🚀 Vision / Visão
-[EN] Bridging the gap between cutting-edge AI capabilities and patient safety in complex clinical environments.
+[EN] Bridging the gap between cutting-edge AI capabilities and patient safety in complex clinical environments.  
 [PT] Preenchendo a lacuna entre as capacidades de IA de ponta e a segurança do paciente em ambientes clínicos complexos.
 
 ---
 
 **Tatiana Santos**  
 *Medical Student & Clinical AI Auditor*  
-[Connect with me on LinkedIn] | [Professional Portfolio] vectors covering Hierarchical Jailbreaking, Missing Critical Data, and Severe Drug Interactions.
-    *   *[PT]* Matrizes de testes adversariais e vetores de avaliação cobrindo Jailbreak Hierárquico, Omissão de Dados Críticos e Interações Medicamentosas Severas.
-
-*   **`/privacy-lgpd`:** 
-    *   *[EN]* Pre-processing redaction pipelines designed to strip Personally Identifiable Information (PII) prior to any API requests.
-    *   *[PT]* Pipelines de reescrita e mascaramento de pré-processamento projetados para remover Informações de Identificação Pessoal (PII) antes de quaisquer requisições de API.
-
----
-
-## 🚀 Purpose / Propósito
-
-[EN] Built as a reference implementation for Clinical AI Auditors, Healthtech Governance Engineers, and medical professionals leading safe technological adoption.
-
-[PT] Construído como uma implementação de referência para Auditores de IA Clínica, Engenheiros de Governança em Healthtechs e profissionais médicos que lideram a adoção tecnológica segura.
+[Connect with me on LinkedIn] | [Professional Portfolio]
