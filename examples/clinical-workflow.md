@@ -1,43 +1,50 @@
-# Clinical Workflow Audit Simulation / Simulação de Auditoria de Fluxo Clínico 🏥🔍
+# Clinical Workflow & AI Audit Simulation / Simulação de Fluxo Clínico e Auditoria de IA 🏥🩺
 
-[EN] This document simulates a real-world audit scenario using the Clinical AI Audit Hub framework. It demonstrates how the system intercepts a raw, unverified clinical query, strips out PII/PHI, applies regulatory and safety constraints, and produces an audited, human-in-the-loop output.
+[EN] This document demonstrates a real-world clinical consultation workflow audited by the Clinical AI Audit Hub. It highlights how the system processes a structured medical anamnesis, monitors safety guardrails, and ensures that clinical decision-making remains strictly under physician oversight.
 
-[PT] Este documento simula um cenário de auditoria do mundo real usando o framework do Clinical AI Audit Hub. Ele demonstra como o sistema intercepta uma consulta clínica bruta e não verificada, remove dados de identificação (PII/PHI), aplica restrições regulatórias e de segurança, e produz um resultado auditado com supervisão humana.
+[PT] Este documento demonstra um fluxo de consulta clínica do mundo real auditado pelo Clinical AI Audit Hub. Ele destaca como o sistema processa uma anamnese médica estruturada, monitora travas de segurança e garante que a tomada de decisão clínica permaneça estritamente sob supervisão médica.
 
 ---
 
-## 🛑 Step 1: Raw Input (Unsanitized) / Entrada Bruta (Não Sanitizada)
-[EN] *Patient provides a raw prompt containing personal data and an ambiguous clinical request.*  
-[PT] *O paciente fornece um prompt bruto contendo dados pessoais e uma solicitação clínica ambígua.*
+## 🏛️ Step 1: Clinical Anamnesis & Structured Intake / Anamnese Clínica e Coleta Estruturada
+[EN] *The physician conducts a professional greeting and systematically investigates the chief complaint, pain characteristics, comorbidities, and current medications.*  
+[PT] *O médico realiza a saudação profissional e investiga sistematicamente a queixa principal, características da dor, comorbidades e medicações em uso.*
 
-> "Olá, meu nome é Maria Silva, CPF 123.456.789-00, moradora de São Paulo. Estou sentindo dores fortes no peito e falta de ar há 2 dias. Posso tomar o remédio X por conta própria para aliviar?"
+> **Physician / Médico:** "Bom dia, sou o(a) Dr(a). Tatiana. Estou realizando seu atendimento hoje. Qual o seu nome e o que motivou a sua consulta?"  
+> **Patient / Paciente:** "Bom dia, sou a Maria. Estou sentindo dores fortes no peito e falta de ar há 2 dias."  
+> 
+> **Physician / Médico:** "Entendido, Maria. Vamos investigar melhor. Poderia descrever a intensidade dessa dor de 0 a 10, se ela irradia para o braço ou mandíbula, e se piora com o esforço?"  
+> **Patient / Paciente:** "A dor é em aperto, intensidade 8/10, irradia para o braço esquerdo e piora quando ando."  
+> 
+> **Physician / Médico:** "Anotado. Você tem histórico de hipertensão, diabetes ou problemas cardíacos na família? E faz uso contínuo de algum medicamento?"  
+> **Patient / Paciente:** "Sou hipertensa, tomo losartana, e perguntei se podia tomar um analgésico comum por conta própria para ver se aliviava o peito."
 
 ---
 
 ## 🔒 Step 2: Privacy Redaction & PII/PHI Stripping / Sanitização de Privacidade
-[EN] *The gateway pipeline automatically detects and masks all sensitive identifiers before it reaches the AI core.*  
-[PT] *O pipeline de gateway detecta e mascara automaticamente todos os identificadores sensíveis antes que cheguem ao núcleo da IA.*
+[EN] *The gateway automatically sanitizes personal identifiers before transmitting clinical logs to the diagnostic assistant layer.*  
+[PT] *O gateway sanitiza automaticamente os identificadores pessoais antes de transmitir os registros clínicos para a camada de assistente diagnóstico.*
 
-> `[REDACTED_NAME]`, `[REDACTED_ID]`, `[REDACTED_LOCATION]` relata dor precordial e dispneia há 48 horas. Pergunta sobre automedicação.
-
----
-
-## ⚖️ Step 3: Regulatory & Safety Audit (Anvisa/LGPD Guardrails) / Auditoria Regulatória e de Segurança
-[EN] *The AI core applies strict safety guardrails: it refuses autonomous diagnosis, flags severe red flags (chest pain), and enforces mandatory human medical review.*  
-[PT] *O núcleo da IA aplica travas rígidas de segurança: recusa diagnóstico autônomo, sinaliza bandeiras vermelhas graves (dor no peito) e exige revisão médica humana obrigatória.*
-
-*   **Risk Level / Nível de Risco:** 🔴 **HIGH (CRITICAL)** / ALTO (CRÍTICO)
-*   **Red Flags Identified / Bandeiras Vermelhas Identificadas:** Chest pain + Shortness of breath (Potential Acute Coronary Syndrome).
-*   **Action Protocol / Protocolo de Ação:** 
-    *   [EN] Immediate referral to emergency medical care. Autonomous medication advice strictly blocked.
-    *   [PT] Encaminhamento imediato para atendimento médico de emergência. Conselho de automedicação estritamente bloqueado.
+> `[REDACTED_PATIENT]` (Hipertensa, em uso de losartana) | Relata dor precordial em aperto (8/10) com irradiação para membro superior esquerdo e dispneia aos esforços há 48h. Tentativa de automedicação relatada.
 
 ---
 
-## 🩺 Step 4: Human-in-the-Loop Final Output / Saída Final com Supervisão Humana
-[EN] *The final validated response delivered to the healthcare professional/patient portal under strict medical oversight.*  
-[PT] *A resposta final validada entregue ao profissional de saúde / portal do paciente sob rigorosa supervisão médica.*
+## ⚖️ Step 3: Regulatory & Safety Audit (Anvisa/Medical Protocols) / Auditoria Regulatória e de Segurança
+[EN] *The AI audit engine evaluates clinical red flags. It flags acute coronary syndrome suspicion, blocks unauthorized medication recommendations, and enforces strict human-in-the-loop review.*  
+[PT] *O motor de auditoria de IA avalia bandeiras vermelhas clínicas. Ele sinaliza suspeita de síndrome coronariana aguda, bloqueia recomendações de medicação não autorizadas e exige revisão rigorosa de supervisão humana.*
 
-> **[Clinical AI Auditor Safeguard Notice]**  
-> Os sintomas relatados (dor no peito e falta de ar) constituem sinais de alerta clínico que exigem **avaliação médica presencial imediata**. A automedicação é contraindicada e pode mascarar condições graves. Procure o serviço de emergência mais próximo.  
+*   **Risk Assessment / Avaliação de Risco:** 🔴 **HIGH / CRITICAL** (Chest pain + Spreading + Hypertension history).
+*   **Safety Interception / Interceptação de Segurança:** 
+    *   [EN] Self-medication attempt intercepted. Differential diagnosis protocol triggered for physician review.
+    *   [PT] Tentativa de automedicação interceptada. Protocolo de diagnóstico diferencial acionado para revisão médica.
+
+---
+
+## 🩺 Step 4: Human-in-the-Loop Clinical Output / Saída Clínica com Supervisão Humana
+[EN] *The validated medical guidance delivered by the physician, backed by the AI safety audit log.*  
+[PT] *A orientação médica validada entregue pelo médico, respaldada pelo registro de auditoria de segurança da IA.*
+
+> **[Clinical Audit Summary & Physician Action]**  
+> Diante do quadro de dor torácica típica com irradiação e fatores de risco cardiovascular (hipertensão), a conduta automatizada e validada exige **encaminhamento imediato ao pronto-socorro** para realização de eletrocardiograma (ECG) e enzimas cardíacas. A automedicação foi vetada.  
+> *Pipeline auditado e validado sob rigorosos padrões de segurança em Healthtech.*a presencial imediata**. A automedicação é contraindicada e pode mascarar condições graves. Procure o serviço de emergência mais próximo.  
 > *Auditado e validado sob diretrizes de segurança clínica.*
