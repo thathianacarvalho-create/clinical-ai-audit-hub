@@ -10,6 +10,14 @@ Este repositório serve como um framework técnico para a implementação segura
 
 ## 🏗️ Core Pillars / Pilares Principais
 
+Privacidade e LGPD (Sanitização de dados)
+
+RAG Seguro & Guardrails (Consulta a diretrizes oficiais e travas de segurança)
+
+Adversarial Resilience / Red Teaming (Testes de estresse e resiliência)
+
+Explainable AI & Source Grounding (Explicabilidade rastreável, eliminando a caixa-preta)
+
 *   **🔒 Privacy-First:** 
     *   [EN] Data redaction pipelines designed to meet global data privacy standards.
     *   [PT] Pipelines de sanitização de dados projetados para atender aos padrões globais de privacidade.
