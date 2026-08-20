@@ -60,7 +60,8 @@
 > > * **Official Sources Retrieved via RAG / Fontes Oficiais Consultadas:** 
 > >   1. *Sociedade Brasileira de Cardiologia (SBC) - Diretrizes de Dor Torácica na Sala de Emergência, Seção 4.1 (Manejo Inicial e ECG em 10 min).*
 > >   2. *Protocolo Clínico e Diretrizes Terapêuticas (PCDT) - Ministério da Saúde / SUS.*
-> > * **Transparency Status / Status de Rastreabilidade:** 🟢 **FULLY GROUNDED (100% Fundamentado)** — Every action item is directly linked to an official regulatory guideline, preventing "black-box" clinical decisions and ensuring compliance education for the practitioner.
+> > * **Transparency Status / Status de Rastreabilidade:** 🟢 **FULLY GROUNDED (100% Fundamentado / Rastreado)** — Every action item is directly linked to an official regulatory guideline, preventing "black-box" clinical decisions and ensuring compliance education for the practitioner. / Cada item de ação está diretamente vinculado a uma diretriz regulatória oficial, evitando decisões clínicas do tipo "caixa-preta" e garantindo a educação em compliance para o profissional.
+> > * 
 > **[Clinical Audit & Conduct Recommendation]**
 > * **Triagem Inicial:** Sala Vermelha (Emergência).
 > * **Ações Imediatas (Protocolo SUS / SBC):**
