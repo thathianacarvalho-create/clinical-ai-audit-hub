@@ -22,6 +22,10 @@ Este repositório serve como um framework técnico para a implementação segura
 *   **🧪 Adversarial Resilience:** 
     *   [EN] Rigorous red-teaming strategy to identify and neutralize high-risk edge cases.
     *   [PT] Rigorosa estratégia de red-teaming para identificar e neutralizar casos extremos de alto risco.
+ 
+    *   * 🔗 **Explainable AI & Source Grounding:** 
+  * [EN] Ensures all generated clinical hypotheses and analytical guidance are strictly linked to official, traceable guidelines (such as SUS, Ministry of Health, and SBC protocols), eliminating "black-box" decisions and serving as an educational compliance tool for practitioners.
+  * [PT] Garante que todas as hipóteses diagnósticas e orientações analíticas geradas estejam estritamente vinculadas a diretrizes oficiais rastreáveis (como protocolos do SUS, Ministério da Saúde e SBC), eliminando o efeito "caixa-preta" e servindo como ferramenta de compliance educativo.
 
 ---
 
