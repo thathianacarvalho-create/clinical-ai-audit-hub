@@ -8,28 +8,21 @@ Este repositório serve como um framework técnico para a implementação segura
 
 ---
 
-## 🏗️ Core Pillars / Pilares Principais
-
-Privacidade e LGPD (Sanitização de dados)
-
-RAG Seguro & Guardrails (Consulta a diretrizes oficiais e travas de segurança)
-
-Adversarial Resilience / Red Teaming (Testes de estresse e resiliência)
-
-Explainable AI & Source Grounding (Explicabilidade rastreável, eliminando a caixa-preta)
-
-*   **🔒 Privacy-First:** 
-    *   [EN] Data redaction pipelines designed to meet global data privacy standards.
-    *   [PT] Pipelines de sanitização de dados projetados para atender aos padrões globais de privacidade.
-*   **⚖️ Regulatory Compliance:** 
-    *   [EN] Built-in guardrails adhering to Anvisa guidelines and medical safety protocols.
-    *   [PT] Travas de segurança integradas aderentes às diretrizes da Anvisa e protocolos médicos.
-*   **🩺 Human-in-the-Loop:** 
-    *   [EN] Strict "Audit-Only" constraints ensuring clinical decisions remain in the hands of healthcare professionals.
-    *   [PT] Restrição estrita de "Apenas Auditoria" garantindo que as decisões clínicas fiquem nas mãos dos profissionais de saúde.
-*   **🧪 Adversarial Resilience:** 
-    *   [EN] Rigorous red-teaming strategy to identify and neutralize high-risk edge cases.
-    *   [PT] Rigorosa estratégia de red-teaming para identificar e neutralizar casos extremos de alto risco.
+* 🔒 **Privacy-First (Data Sanitization):**
+  * [EN] Data redaction and sanitization pipelines designed to meet global data privacy standards (LGPD/HIPAA).
+  * [PT] Pipelines de sanitização e mascaramento de dados projetados para atender aos padrões globais de privacidade (LGPD/HIPAA).
+* 🛡️ **Secure RAG & Guardrails:**
+  * [EN] Deterministic retrieval from official medical guidelines combined with robust safety guardrails against autonomous prescribing.
+  * [PT] Recuperação determinística de diretrizes médicas oficiais combinada com travas de segurança robustas contra prescrição autônoma.
+* ⚡ **Adversarial Resilience (Red Teaming):**
+  * [EN] Rigorous red-teaming strategy to identify, test, and neutralize high-risk clinical edge cases and prompt injections.
+  * [PT] Rigorosa estratégia de red-teaming para identificar, testar e neutralizar casos clínicos extremos de alto risco e prompt injections.
+* 🔗 **Explainable AI & Source Grounding:**
+  * [EN] Ensures all clinical hypotheses are strictly linked to traceable guidelines, eliminating black-box decisions and providing compliance education.
+  * [PT] Garante que todas as hipóteses clínicas estejam vinculadas a diretrizes rastreáveis, eliminando decisões em caixa-preta e educando em compliance.
+* ⚖️ **Human-In-The-Loop:**
+  * [EN] Strict "Audit-Only" constraints ensuring clinical decisions and prescriptions remain exclusively in the hands of healthcare professionals.
+  * [PT] Restrição estrita de "Apenas Auditoria" garantindo que as decisões clínicas e prescrições fiquem exclusivamente nas mãos dos profissionais de saúde.
  
     *   * 🔗 **Explainable AI & Source Grounding:** 
   * [EN] Ensures all generated clinical hypotheses and analytical guidance are strictly linked to official, traceable guidelines (such as SUS, Ministry of Health, and SBC protocols), eliminating "black-box" decisions and serving as an educational compliance tool for practitioners.
