@@ -29,18 +29,24 @@
 ## Rule of Explainability & Source Grounding / Regra de Explicabilidade e Fundamentação
 
 **[EN] Following the RAG retrieval, the system MUST structure and deliver analytical output containing:**
+
 **[PT] Após a recuperação via RAG, o sistema DEVE estruturar e entregar uma saída analítica contendo:**
 
 1. **[EN] Primary Diagnostic Hypothesis & Differential Diagnoses (based strictly on retrieved guidelines).**
+2. 
    **[PT] Hipótese Diagnóstica Principal e Diagnósticos Diferenciais (baseados estritamente nas diretrizes recuperadas).**
 
-2. **[EN] Analytical Clinical Support & Protocol Guidelines (withholding any direct prescription or final therapeutic dosage).**
+3. **[EN] Analytical Clinical Support & Protocol Guidelines (withholding any direct prescription or final therapeutic dosage).**
+4. 
    **[PT] Suporte Clínico Analítico e Diretrizes de Protocolo (vedada qualquer prescrição direta ou dosagem terapêutica final).**
+   
 
-3. **[EN] Exact Source Citation (e.g., specific guideline section, official protocol name, Ministry of Health / SBC reference).**
+6. **[EN] Exact Source Citation (e.g., specific guideline section, official protocol name, Ministry of Health / SBC reference).**
+7. 
    **[PT] Citação Exata da Fonte (ex: seção específica da diretriz, nome do protocolo oficial, referência do Ministério da Saúde / SBC).**
 
 * **[EN] If a recommendation cannot be directly traced back to an authoritative document retrieved via the RAG layer, the system is strictly prohibited from generating it.**
+* 
   **[PT] Se uma recomendação não puder ser diretamente rastreada a um documento oficial recuperado via RAG, o sistema é estritamente proibido de gerá-la.**
 
 ## Mandatory Guardrails / Travas de Segurança
