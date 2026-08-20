@@ -17,16 +17,15 @@ Este repositório serve como um framework técnico para a implementação segura
 * ⚡ **Adversarial Resilience (Red Teaming):**
   * [EN] Rigorous red-teaming strategy to identify, test, and neutralize high-risk clinical edge cases and prompt injections.
   * [PT] Rigorosa estratégia de red-teaming para identificar, testar e neutralizar casos clínicos extremos de alto risco e prompt injections.
-* 🔗 **Explainable AI & Source Grounding:**
-  * [EN] Ensures all clinical hypotheses are strictly linked to traceable guidelines, eliminating black-box decisions and providing compliance education.
-  * [PT] Garante que todas as hipóteses clínicas estejam vinculadas a diretrizes rastreáveis, eliminando decisões em caixa-preta e educando em compliance.
+* 🔗 Explainable AI & Source Grounding:
+[EN] Ensures all generated clinical hypotheses and analytical guidance are strictly linked to official, traceable guidelines (such as SUS, Ministry of Health, and SBC protocols), eliminating "black-box" decisions and serving as an educational compliance tool for practitioners.
+
+[PT] Garante que todas as hipóteses diagnósticas e orientações analíticas geradas estejam estritamente vinculadas a diretrizes oficiais rastreáveis (como protocolos do SUS, Ministério da Saúde e SBC), eliminando o efeito "caixa-preta" e servindo como ferramenta de compliance educativo.
+
 * ⚖️ **Human-In-The-Loop:**
   * [EN] Strict "Audit-Only" constraints ensuring clinical decisions and prescriptions remain exclusively in the hands of healthcare professionals.
   * [PT] Restrição estrita de "Apenas Auditoria" garantindo que as decisões clínicas e prescrições fiquem exclusivamente nas mãos dos profissionais de saúde.
  
-    *   * 🔗 **Explainable AI & Source Grounding:** 
-  * [EN] Ensures all generated clinical hypotheses and analytical guidance are strictly linked to official, traceable guidelines (such as SUS, Ministry of Health, and SBC protocols), eliminating "black-box" decisions and serving as an educational compliance tool for practitioners.
-  * [PT] Garante que todas as hipóteses diagnósticas e orientações analíticas geradas estejam estritamente vinculadas a diretrizes oficiais rastreáveis (como protocolos do SUS, Ministério da Saúde e SBC), eliminando o efeito "caixa-preta" e servindo como ferramenta de compliance educativo.
 
 ---
 
